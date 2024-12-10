@@ -1,0 +1,3 @@
+# Python Uncommon Error: Masked ZeroDivisionError
+
+This repository demonstrates a subtle error in Python that can be difficult to track down. The error involves a ZeroDivisionError that is conditionally masked. The main function `function_with_uncommon_error` divides 1 by x, this part could lead to ZeroDivisionError if the input x is 0. However, there is a conditional statement `if x == 0:` to handle this case. This could potentially mask the error if the programmer does not anticipate the `1/x` operation happening in the `if` condition.  The example highlights the importance of careful code review and thorough testing to prevent unexpected behavior.
